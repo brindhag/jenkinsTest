@@ -52,6 +52,7 @@ class CalcUITests: XCTestCase {
         if let textFieldValue = app.textFields["display"].value as? String {
             XCTAssertTrue(textFieldValue == "10", "Part 2 failed.")
         }
+        print("******** TEST ADDITION *********");
     }
 
     // MARK: - Subtraction
