@@ -1,7 +1,9 @@
 language: objective-c
 osx_image: xcode9
-podfile: Example/Podfile
-pod install
+#podfile: Example/Podfile
+#pod install
+before_install:
+- pod install --project-directory=Example
 script:
  - xcodebuild build -project Example/ExampleBootstrap.xcodeproj -list -destination 'platform=iOS Simulator,OS=11.0,name=iPhone 5s' build test | xcpretty -c --test --color
  
