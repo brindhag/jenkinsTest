@@ -5,5 +5,5 @@ osx_image: xcode9
 before_install:
 - pod install --project-directory=Example
 script:
- - xcodebuild build -project Example/ExampleBootstrap.xcodeproj -scheme ExampleBootstrapTests -destination 'platform=iOS Simulator,OS=11.0,name=iPhone 5s' | xcpretty -c --test --color
+ - xcodebuild test -project Example/ExampleBootstrap.xcodeproj -scheme ExampleBootstrapTests -destination 'platform=iOS Simulator,OS=11.0,name=iPhone 5s' | xcpretty -c --test --color
  
