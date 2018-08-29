@@ -14,6 +14,7 @@
 - (void)testExample
 {
     Example *lib = [[Example alloc] init];
+    123
 
     STAssertTrue([lib returnsTrue],   @"Example did not return true");
     STAssertFalse([lib returnsFalse], @"Example did not return false");
